@@ -13,12 +13,11 @@ function Row(props) {
 
   //A snippet of code which runs based on a specific condition/variable
   useEffect(() => {
-    async function fetchData() {
+    (async() => {
       const response = await axios.get("/videos");
       setMovies(response.data.videos);
       return response;
-    }
-    fetchData();
+    })();
   }, []);
 
   const opts = {
@@ -51,7 +50,6 @@ function Row(props) {
       <h2 className="row_title">{props.title}</h2>
       {/*constainer -> posters*/}
       <div className="row_posters">
-        {console.log(movies.filter((movie) => movie.category == props.title))}
         {movies
           .filter((movie) => movie.category === props.title)
           .map((movie) => (

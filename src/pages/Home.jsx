@@ -1,7 +1,5 @@
 import react,{useEffect,useState} from "react";
-import Nav from "../components/Nav/Nav";
-import Banner from "../components/Banner/Banner";
-import Row from "../components/Row/Row";
+import {Nav,Banner,Row} from "../components";
 import axios from "../utils/axios";
 
 

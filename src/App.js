@@ -1,14 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import WatchLater from "./pages/WatchLater";
-import History from "./pages/History";
-import MyPlaylists from "./pages/MyPlaylists";
-import SignUp from "./pages/SignUp";
-import LogIn from "./pages/LogIn";
+import { Home,WatchLater,History,MyPlaylists, SignUp, LogIn, NotFound, RequireAuth} from "./pages"
 import Mockman from "mockman-js";
-import NotFound from "./pages/NotFound";
-import { RequireAuth } from "./pages/RequireAuth";
 import "./App.css";
 
 function App() {

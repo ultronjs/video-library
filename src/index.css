@@ -1,3 +1,5 @@
+@import url("https://dash-css.netlify.app/css/style.css");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +12,98 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root{
+  --primary-color:#E50914;
+  --primary-black:#171200;
+  --input-background:#333333;
+  --primary-white:#FFFFFF;
+  --primary-grey:#7C8083
+
+}
+
+/*Form Container for the form such as (Loign,SignUp)*/
+.form_main_container{
+  position: relative;
+  z-index: 1;
+}
+.form_container_img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  /* height: 100%;
+  width: 100vw; */
+    box-sizing: content-box;
+    opacity: .5;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/2e55d714-5f67-45ab-8bf5-4eac31d14722/IN-en-20220509-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+.form_container{
+    padding-top: 4.5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: #111;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+    0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+    opacity: 1;
+    color: white;
+}
+
+.form_header{
+    margin-top: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.2rem;
+}
+.sign_up{
+    height: 38rem;
+}
+.login_password_label{
+    display: flex;
+    justify-content: space-between;
+}
+.input_group{
+    width: 80%;
+}
+.input_icon{
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    bottom: 1.865rem;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.input_regular{
+  background-color: var(--input-background);
+  border: transparent;
+  color: var(--primary-white);
+}
+.form_link{
+  color: var(--primary-color);
+}
+
+.toast_rightside{
+    position: fixed;
+    right: 10px;
+    bottom: 1rem;
+    z-index: 1;
 }

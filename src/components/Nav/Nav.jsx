@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import {MdOndemandVideo} from "react-icons/md"
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useAuth } from "../../context";
 
 function Nav() {
   const [show, handleShow] = useState(false);
+  const {signInStatus} = useAuth()
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -61,14 +63,28 @@ function Nav() {
           >
             Playlists
           </NavLink>
+          <NavLink
+            to="/likedvideos"
+            activeStyle={{
+              fontWeight: "bold",
+            }}
+            className="nav_link"
+          >
+            Liked Videos
+          </NavLink>
         </div>
       </div>
-
-      <img
-        className="nav_avator"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-        alt="Avatar"
-      />
+      {signInStatus.status ? (
+        <img
+          className="nav_avator"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+          alt="Avatar"
+        />
+      ) : (
+        <Link to="login">
+          <button className="nav_login_btn btn btn_primary">Login</button>
+        </Link>
+      )}
     </div>
   );
 }

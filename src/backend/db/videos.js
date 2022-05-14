@@ -26,6 +26,8 @@ export const videos = [
     vote_average: 6.1,
     category: "Originals",
     vote_count: 355,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -47,6 +49,8 @@ export const videos = [
     vote_average: 7.6,
     category: "Originals",
     vote_count: 47,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -68,6 +72,8 @@ export const videos = [
     vote_average: 7.6,
     category: "Originals",
     vote_count: 2077,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -89,6 +95,8 @@ export const videos = [
     vote_average: 8.2,
     category: "Originals",
     vote_count: 10890,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -110,6 +118,8 @@ export const videos = [
     vote_average: 6.7,
     category: "Originals",
     vote_count: 88,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -131,6 +141,8 @@ export const videos = [
     vote_average: 6.5,
     category: "Originals",
     vote_count: 104,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -152,6 +164,8 @@ export const videos = [
     vote_average: 6.9,
     category: "Originals",
     vote_count: 272,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -173,6 +187,8 @@ export const videos = [
     vote_average: 8,
     category: "Originals",
     vote_count: 14599,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -194,6 +210,8 @@ export const videos = [
     vote_average: 7.4,
     category: "Originals",
     vote_count: 505,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -215,6 +233,8 @@ export const videos = [
     vote_average: 7.9,
     category: "Originals",
     vote_count: 1290,
+    liked:false,
+    addedToWatchLater:false
   },
   {
     original_title: "Doctor Strange in the Multiverse of Madness",
@@ -236,6 +256,8 @@ export const videos = [
     popularity: 5007.839,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     original_title: "The Batman",
@@ -257,6 +279,8 @@ export const videos = [
     popularity: 4740.532,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     backdrop_path:
@@ -278,6 +302,8 @@ export const videos = [
     popularity: 4449.169,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     poster_path:
@@ -298,6 +324,8 @@ export const videos = [
     popularity: 4518.44,
     media_type: "tv",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     id: 675353,
@@ -319,6 +347,8 @@ export const videos = [
     popularity: 12851.144,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     release_date: "2022-04-27",
@@ -340,6 +370,8 @@ export const videos = [
     popularity: 1823.374,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     poster_path:
@@ -361,6 +393,8 @@ export const videos = [
     popularity: 3933.964,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     overview:
@@ -382,6 +416,8 @@ export const videos = [
     popularity: 4730.107,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     genre_ids: [12, 35, 10749],
@@ -403,6 +439,8 @@ export const videos = [
     popularity: 505.424,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     overview:
@@ -424,6 +462,8 @@ export const videos = [
     popularity: 2670.696,
     media_type: "movie",
     category: "Trending",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -445,6 +485,8 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 1142,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -466,6 +508,8 @@ export const videos = [
     vote_average: 7.5,
     vote_count: 1139,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -487,6 +531,8 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 305,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -508,6 +554,8 @@ export const videos = [
     vote_average: 7.2,
     vote_count: 1796,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -529,6 +577,8 @@ export const videos = [
     vote_average: 8.1,
     vote_count: 12602,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -550,6 +600,8 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 18894,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -571,6 +623,8 @@ export const videos = [
     vote_average: 7,
     vote_count: 515,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -592,6 +646,8 @@ export const videos = [
     vote_average: 6.5,
     vote_count: 935,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -613,6 +669,8 @@ export const videos = [
     vote_average: 6.3,
     vote_count: 46,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -634,6 +692,8 @@ export const videos = [
     vote_average: 6,
     vote_count: 206,
     category: "Action",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -655,6 +715,8 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 21370,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -676,6 +738,8 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 3619,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -697,6 +761,8 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 15927,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -718,6 +784,8 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 227,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -739,6 +807,8 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 12730,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -760,6 +830,8 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 303,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -781,6 +853,8 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 9604,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -802,6 +876,8 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 224,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -823,6 +899,8 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 1404,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -844,6 +922,8 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 221,
     category: "Top Rated",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -865,6 +945,8 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 36,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -886,6 +968,8 @@ export const videos = [
     vote_average: 6,
     vote_count: 153,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -907,6 +991,8 @@ export const videos = [
     vote_average: 5.6,
     vote_count: 18,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -928,6 +1014,8 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 433,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -949,6 +1037,8 @@ export const videos = [
     vote_average: 6.2,
     vote_count: 40,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -970,6 +1060,8 @@ export const videos = [
     vote_average: 6.2,
     vote_count: 1525,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -991,6 +1083,8 @@ export const videos = [
     vote_average: 6.8,
     vote_count: 1254,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1012,6 +1106,8 @@ export const videos = [
     vote_average: 5.1,
     vote_count: 735,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1033,6 +1129,8 @@ export const videos = [
     vote_average: 7,
     vote_count: 579,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1054,6 +1152,8 @@ export const videos = [
     vote_average: 6.3,
     vote_count: 51,
     category: "Horror",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1075,6 +1175,8 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 1142,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1096,6 +1198,8 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 305,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1117,6 +1221,8 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 2058,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1138,6 +1244,8 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 6357,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1159,6 +1267,8 @@ export const videos = [
     vote_average: 8,
     vote_count: 26,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1180,6 +1290,8 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 78,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1201,6 +1313,8 @@ export const videos = [
     vote_average: 7.1,
     vote_count: 832,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1222,6 +1336,8 @@ export const videos = [
     vote_average: 7,
     vote_count: 2119,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1243,6 +1359,8 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 1099,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1264,6 +1382,8 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 7934,
     category: "Comedy",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1285,6 +1405,8 @@ export const videos = [
     vote_average: 5.7,
     vote_count: 346,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1306,6 +1428,8 @@ export const videos = [
     vote_average: 8,
     vote_count: 26,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1327,6 +1451,8 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 68,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1348,6 +1474,8 @@ export const videos = [
     vote_average: 7,
     vote_count: 255,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1369,6 +1497,8 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 292,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1390,6 +1520,8 @@ export const videos = [
     vote_average: 7.6,
     vote_count: 1779,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1411,6 +1543,8 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 81,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1432,6 +1566,8 @@ export const videos = [
     vote_average: 7.6,
     vote_count: 47,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1453,6 +1589,8 @@ export const videos = [
     vote_average: 7.1,
     vote_count: 1686,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1474,6 +1612,8 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 95,
     category: "Romance",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1495,6 +1635,8 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 6,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1516,6 +1658,8 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 334,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1537,6 +1681,8 @@ export const videos = [
     vote_average: 6.3,
     vote_count: 41,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1558,6 +1704,8 @@ export const videos = [
     vote_average: 7.8,
     vote_count: 1358,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1579,6 +1727,8 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 11,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1600,6 +1750,8 @@ export const videos = [
     vote_average: 7.9,
     vote_count: 16,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1621,6 +1773,8 @@ export const videos = [
     vote_average: 6.2,
     vote_count: 9,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1642,6 +1796,8 @@ export const videos = [
     vote_average: 5.5,
     vote_count: 67,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1661,6 +1817,8 @@ export const videos = [
     vote_average: 2,
     vote_count: 1,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
   {
     _id: uuid(),
@@ -1682,5 +1840,7 @@ export const videos = [
     vote_average: 5.4,
     vote_count: 195,
     category: "Documentaries",
+    liked:false,
+    addedToWatchLater:false
   },
 ];

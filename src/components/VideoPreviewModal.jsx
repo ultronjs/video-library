@@ -14,7 +14,6 @@ function VideoPreviewModal(props) {
   const { video, setShowVideoPreviewModal } = props; 
   const { postWatchLaterData,deleteWatchLaterData} = useWatchLater()
   const { postLikedVideoData, deleteLikedVideoData } = useLikedVideo();
-  console.log(video);
   const baseURL = "https://image.tmdb.org/t/p/original/";
   return (
     <>

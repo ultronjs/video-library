@@ -43,7 +43,6 @@ const WatchLaterProvider = ({ children }) => {
           type: "ADD_TO_WATCH_LATER",
           payload: video,
         });
-        console.log(watchLater)
         return data.watchlater;
       }
     } catch (error) {

@@ -15,8 +15,6 @@ function Row(props) {
   const { watchLater } = useWatchLater();
   const [trailerUrl, setTrailerUrl] = useState("");
   const [showvideoPreviewModal, setShowVideoPreviewModal] = useState(false);
-  console.log(likedVideo);
-  console.log(watchLater);
   
   const opts = {
     height: "390",

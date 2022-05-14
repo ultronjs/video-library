@@ -10,7 +10,6 @@ import { BsFillPlayCircleFill } from "react-icons/bs";
 import { useLikedVideo, useWatchLater } from '../context';
 
 function VideoCard({video}) {
-  console.log(video)
   const [hover,setHover] = useState(false)
   const { likedVideo, postLikedVideoData, deleteLikedVideoData } =
     useLikedVideo();

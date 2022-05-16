@@ -1,4 +1,5 @@
 import React from 'react'
+import "../index.css"
 
 function Toast({type,msg}) {
     const variantOfToast = {

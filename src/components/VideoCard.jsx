@@ -4,17 +4,19 @@ import {
   MdAddCircleOutline,
   MdOutlineCancel,
   MdCheckCircleOutline,
+  MdOutlineDeleteOutline,
 } from "react-icons/md";
 import { AiOutlineLike, AiFillLike } from "react-icons/ai";
 import { BsFillPlayCircleFill } from "react-icons/bs";
-import { useLikedVideo, useWatchLater } from '../context';
+import { useLikedVideo, usePlayLists, useWatchLater } from '../context';
 
-function VideoCard({video}) {
-  const [hover,setHover] = useState(false)
+function VideoCard({ video, playListId }) {
+  const [hover, setHover] = useState(false);
   const { likedVideo, postLikedVideoData, deleteLikedVideoData } =
     useLikedVideo();
   const { watchLater, postWatchLaterData, deleteWatchLaterData } =
     useWatchLater();
+  const { removeVideoInPlayList } = usePlayLists();
 
   video.liked = likedVideo.some((element) => element._id === video._id);
   video.addedToWatchLater = watchLater.some(
@@ -76,6 +78,13 @@ function VideoCard({video}) {
                 onClick={() => postWatchLaterData(video)}
                 className="video_card_hover_action"
                 size={25}
+              />
+            )}
+            {playListId && (
+              <MdOutlineDeleteOutline
+                className="icon"
+                size={30}
+                onClick={() => removeVideoInPlayList(playListId, video._id)}
               />
             )}
           </div>

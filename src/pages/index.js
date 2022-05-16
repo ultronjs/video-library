@@ -6,4 +6,5 @@ export { default as MyPlaylists } from "./MyPlaylists";
 export { default as NotFound } from "./NotFound";
 export { default as WatchLater } from "./WatchLater";
 export { default as LikedVideo } from "./LikedVideo";
+export { default as PlaylistDetails } from "./PlaylistDetails";
 export { RequireAuth } from "./RequireAuth";

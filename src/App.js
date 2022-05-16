@@ -10,6 +10,7 @@ import {
   NotFound,
   RequireAuth,
   LikedVideo,
+  PlaylistDetails,
 } from "./pages";
 import Mockman from "mockman-js";
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/watchlater" element={<WatchLater />} />
         <Route path="/history" element={<History />} />
         <Route path="/myplaylists" element={<MyPlaylists />} />
+        <Route path="/myplaylists/:playlistId" element={<PlaylistDetails />} />
         <Route path="/likedvideos" element={<LikedVideo />} />
       </Routes>
     </div>

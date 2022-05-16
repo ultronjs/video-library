@@ -171,3 +171,8 @@ color: var(--primary-black);
   margin-left: 20px;
 
 }
+
+.toast_wrapper{
+  background-color: var(--input-background);
+  z-index: 20;
+}

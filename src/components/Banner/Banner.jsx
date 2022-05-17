@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 import "./Banner.css";
 
 function Banner() {
-  const [movie, setMovie] = useState([]);
+  const [video, setVideo] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get("/videos");
       const random = Math.floor(Math.random() * request.data.videos.length - 1);
-      setMovie(request.data.videos[random]);
+      setVideo(request.data.videos[random]);
       return request;
     }
     fetchData();
@@ -24,19 +24,19 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url(${movie?.backdrop_path})`,
+        backgroundImage: `url(${video?.backdrop_path})`,
         backgroundPosition: "center center",
       }}
     >
       <div className="banner_contents">
         <h1 className="banner_title">
-          {movie?.title || movie?.name || movie?.original_name}
+          {video?.title || video?.name || video?.original_name}
         </h1>
         <div className="banner_buttons">
           <button className="banner_button">Play</button>
           <button className="banner_button">My List</button>
         </div>
-        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
+        <h1 className="banner_description">{truncate(video?.overview, 150)}</h1>
       </div>
       <div className="banner_fadeBottom"></div>
     </header>

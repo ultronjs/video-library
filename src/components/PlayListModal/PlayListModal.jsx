@@ -26,7 +26,6 @@ function PlayListModal(props) {
     videos: [],
   };
   const [createPlayList,setCreatePlayList] = useState(initialCreatePlayListObj)
-  console.log(createPlayList)
   useEffect(() => {
     getPlayListsData()
   }, [playlists])

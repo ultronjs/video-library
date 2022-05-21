@@ -6,14 +6,12 @@ import "../index.css";
 
 function PlaylistDetails() {
     const { playlistId } = useParams();
-    console.log(playlistId);
     const {playlists,getPlayListsData} = usePlayLists();
     const [playList,setPlayList]  = useState([])
     useEffect(() => {
       getPlayListsData()
       setPlayList(playlists.filter(playlist => playlist._id === playlistId))
       }, []);
-    console.log(playlists,"....." ,playList);
   return (
     <div className="main_container">
       <Nav />

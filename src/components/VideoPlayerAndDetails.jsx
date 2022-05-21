@@ -33,7 +33,6 @@ function VideoPlayerAndDetails() {
           (element) => element._id === videoId
         );
         setVideo(video[0]);
-        console.log(video);
         movieTrailer(
           video[0]?.title ||
             video[0]?.name ||
@@ -42,7 +41,6 @@ function VideoPlayerAndDetails() {
             ""
         )
           .then((url) => {
-            console.log(url);
             const urlParam = new URLSearchParams(new URL(url).search);
             setTrailerUrl(urlParam.get("v"));
           })

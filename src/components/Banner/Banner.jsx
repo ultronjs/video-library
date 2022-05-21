@@ -1,9 +1,11 @@
 import axios from "../../utils/axios";
 import React, { useEffect, useState } from "react";
 import "./Banner.css";
+import {useNavigate} from "react-router-dom"
 
 function Banner() {
   const [video, setVideo] = useState([]);
+  const navigate = useNavigate()
 
   useEffect(() => {
     async function fetchData() {
@@ -33,8 +35,18 @@ function Banner() {
           {video?.title || video?.name || video?.original_name}
         </h1>
         <div className="banner_buttons">
-          <button className="banner_button">Play</button>
-          <button className="banner_button">My List</button>
+          <button
+            className="banner_button"
+            onClick={() => navigate(`/video/${video._id}`)}
+          >
+            Play
+          </button>
+          <button
+            className="banner_button"
+            onClick={() => navigate("/watchlater")}
+          >
+            My List
+          </button>
         </div>
         <h1 className="banner_description">{truncate(video?.overview, 150)}</h1>
       </div>

@@ -6,3 +6,6 @@ export { default as LoginForm } from "./LoginForm";
 export { default as VideoPreviewModal } from "./VideoPreviewModal";
 export { default as VideoCard } from "./VideoCard";
 export { default as PlayListCard } from "./PlayListCard/PlayListCard";
+export { default as RecommededVideosList } from "./RecommededVideosList";
+export { default as VideoPlayerAndDetails } from "./VideoPlayerAndDetails";
+export { default as HistoryVideoCard } from "./HistoryVideoCard";

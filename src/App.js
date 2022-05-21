@@ -14,6 +14,7 @@ import {
 } from "./pages";
 import Mockman from "mockman-js";
 import "./App.css";
+import VideoDetail from "./pages/VideoDetail";
 
 function App() {
   return (
@@ -24,12 +25,20 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/mockman" element={<Mockman />} />
+        <Route path="/video/:videoId" element={<VideoDetail />} />
         {/* Protected Paths */}
-        <Route path="/watchlater" element={<WatchLater />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/myplaylists" element={<MyPlaylists />} />
-        <Route path="/myplaylists/:playlistId" element={<PlaylistDetails />} />
-        <Route path="/likedvideos" element={<LikedVideo />} />
+        <Route
+          path="/watchlater"
+          element={
+            <RequireAuth>
+              <WatchLater />
+            </RequireAuth>
+          }
+        />
+        <Route path="/history" element={<RequireAuth><History /></RequireAuth>} />
+        <Route path="/myplaylists" element={<RequireAuth><MyPlaylists /></RequireAuth>} />
+        <Route path="/myplaylists/:playlistId" element={<RequireAuth><PlaylistDetails /></RequireAuth>} />
+        <Route path="/likedvideos" element={<RequireAuth><LikedVideo /></RequireAuth>} />
       </Routes>
     </div>
   );

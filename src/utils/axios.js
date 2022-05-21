@@ -10,11 +10,11 @@ const instance = axios.create({
 export default instance;
 
 
-instance.interceptors.request.use((req) => {
-  console.log("request", req);
-  return req;
-});
-instance.interceptors.response.use((res) => {
-  console.log("response", res);
-  return res;
-});
+// instance.interceptors.request.use((req) => {
+//   console.log("request", req);
+//   return req;
+// });
+// instance.interceptors.response.use((res) => {
+//   console.log("response", res);
+//   return res;
+// });

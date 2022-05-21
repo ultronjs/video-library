@@ -8,8 +8,8 @@ function NotFound() {
     <div className="main_container flex flex-col flex-center">
       <Nav />
       <img className="not_found_image" src="/assets/404.png" alt="404" />
-      <Link to="/products">
-        <button className="btn btn_primary_outline">Continue Shopping</button>
+      <Link to="/">
+        <button className='btn btn_primary_outline'>Go Back to Home</button>
       </Link>
     </div>
   );

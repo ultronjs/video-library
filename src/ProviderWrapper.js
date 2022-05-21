@@ -4,20 +4,26 @@ import {
   LikedVideoProvider,
   PlayListProvider,
   ToastProvider,
+  VideosProvider,
   WatchLaterProvider
 } from "./context";
+import { HistoryProvider } from "./context/historyContext";
 export const ProviderWrapper = ({ children }) => {
   return (
     <ToastProvider>
-      <AuthProvider>
-        <PlayListProvider>
-          <WatchLaterProvider>
-            <LikedVideoProvider>
-              <BrowserRouter>{children}</BrowserRouter>
-            </LikedVideoProvider>
-          </WatchLaterProvider>
-        </PlayListProvider>
-      </AuthProvider>
+      <VideosProvider>
+        <AuthProvider>
+          <PlayListProvider>
+            <WatchLaterProvider>
+              <LikedVideoProvider>
+                <HistoryProvider>
+                  <BrowserRouter>{children}</BrowserRouter>
+                </HistoryProvider>
+              </LikedVideoProvider>
+            </WatchLaterProvider>
+          </PlayListProvider>
+        </AuthProvider>
+      </VideosProvider>
     </ToastProvider>
   );
 };

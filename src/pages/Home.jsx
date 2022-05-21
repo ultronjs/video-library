@@ -1,14 +1,15 @@
 import react,{useEffect,useState} from "react";
 import {Nav,Banner,Row} from "../components";
 import axios from "../utils/axios";
-import {useAuth, useLikedVideo,useWatchLater} from "../context"
+import {useAuth, useHistory, useLikedVideo,useVideos,useWatchLater} from "../context"
 
 
 function Home() {
   const [categories, setCategories] = useState([]);
-  const [videos,setVideos] = useState([])
+  const {videos,getVideosData} = useVideos()
   const { getLikedVideoData } = useLikedVideo();
   const { getWatchLaterData } = useWatchLater();
+  const { getHistoryVideoData } = useHistory()
   const {signInStatus } = useAuth()
   useEffect(() => {
     (async() => {
@@ -16,14 +17,11 @@ function Home() {
       setCategories(response.data.categories);
       return response;
     })();
-    (async () => {
-      const response = await axios.get("/videos");
-      setVideos(response.data.videos);
-      return response;
-    })();
+      getVideosData()
     if(signInStatus.status){
       getLikedVideoData();
       getWatchLaterData();
+      getHistoryVideoData();
     }
   }, []);
   return (
@@ -35,7 +33,7 @@ function Home() {
       
       {/* {Rows} */}
       {categories.length > 0 &&
-        categories.map((category) => <Row title={category.categoryName} videos={videos.filter(video=>video.category === category.categoryName)} isLargeRow={category.isLargeRow}/>)}
+        categories.map((category) => <Row key={categories._id} title={category.categoryName} videos={videos.filter(video=>video.category === category.categoryName)} isLargeRow={category.isLargeRow}/>)}
     </div>
   );
 }

@@ -11,7 +11,7 @@ function PlaylistDetails() {
     useEffect(() => {
       getPlayListsData()
       setPlayList(playlists.filter(playlist => playlist._id === playlistId))
-      }, []);
+      }, [playlists]);
   return (
     <div className="main_container">
       <Nav />

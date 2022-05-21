@@ -70,6 +70,10 @@ const PlayListProvider = ({ children }) => {
             type: "ADD_TO_PLAYLIST",
             payload: {id:playlistId,video:video},
           });
+          addToast({
+            type: "Success",
+            msg: "Added Successfully",
+          });
           return data.playlist;
         }
       } catch (error) {
@@ -94,6 +98,10 @@ const PlayListProvider = ({ children }) => {
           playListsDispatch({
             type: "REMOVE_FROM_PLAYLIST",
             payload: { playlist_id: playlistId, playlist: data.playlist },
+          });
+          addToast({
+            type: "Success",
+            msg: "Removed Successfully",
           });
           return data.playlist;
         }

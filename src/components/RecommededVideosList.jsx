@@ -6,15 +6,17 @@ import VideoCard from './VideoCard'
 function RecommededVideosList() {
   const {videoId} = useParams()
   const {videos} = useVideos()
+  let videoOfSameCategory
+  if(videos.length>0){
   const videoPlaying = videos.filter(video => video._id === videoId)
-  const videoOfSameCategory = videos.filter(
-    (video) => video.category === videoPlaying[0].category
-  );
-  console.log(videoOfSameCategory)
+  console.log(videos, "...", videoPlaying);
+  videoOfSameCategory = videos.filter(
+    (video) => video.category === videoPlaying[0].category && video._id !== videoPlaying[0]._id
+  )};
   return (
     <>
       <h2>Recommeded</h2>
-      {videos && (
+      {videos.length>0 && (
         <div className="video_container">
           {videoOfSameCategory.map((video) => (
             <VideoCard key={video._id} video={video} />

@@ -5,8 +5,8 @@ import { Link, NavLink,useNavigate } from "react-router-dom";
 import { useAuth } from "../../context";
 
 function Nav() {
-  const [show, handleShow] = useState(false);
-  const {signInStatus} = useAuth()
+  const [show, handleShow] = useState(false)
+  const { signInStatus, signInStatusDispatch } = useAuth();
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -16,6 +16,11 @@ function Nav() {
       } else handleShow(false);
     });
   }, []);
+  const logOut = () => {
+    localStorage.removeItem("token");
+    signInStatusDispatch({ type: "SIGN_OUT" });
+    navigate("/");
+  };
   return (
     <div className={`nav ${show && "nav_black"}`}>
       <div className="nav_left_side">
@@ -82,6 +87,7 @@ function Nav() {
           className="nav_avator"
           src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
           alt="Avatar"
+          onClick={logOut}
         />
       ) : (
         <Link to="login">

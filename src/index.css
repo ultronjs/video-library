@@ -196,3 +196,8 @@ color: var(--primary-black);
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+.not_found_image{
+  margin-top: 50px;
+    height: 80vh;
+    width: 60vw;
+}

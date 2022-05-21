@@ -23,13 +23,17 @@ function VideoPlayerAndDetails() {
     const { watchLater, postWatchLaterData, deleteWatchLaterData } = useWatchLater(); 
     const [showPlayListModal, setShowPlayListModal] = useState(false);
     useEffect(() => {
-        handleGetVideo()
+        getVideosData();
+        if(videos.length){
         const video = videos.filter((video) => video._id === videoId);
-        video.liked = likedVideo.some(element => element._id === videoId)
+        video.liked = likedVideo.some(
+          (element) => element._id === videoId
+        );
         video.addedToWatchLater = watchLater.some(
           (element) => element._id === videoId
         );
-        setVideo(video[0])
+        setVideo(video[0]);
+        console.log(video);
         movieTrailer(
           video[0]?.title ||
             video[0]?.name ||
@@ -45,18 +49,9 @@ function VideoPlayerAndDetails() {
           .catch((error) => {
             console.log(error);
             alert(error);
-          });
+          })}
         },
       [videoId]);
-
-
-  const handleGetVideo = async () => {
-    try{
-      const videos = await getVideosData()
-    }catch(error){
-      console.log(error)
-    }
-  }
   const opts = {
     height: "390",
     width: "100%",

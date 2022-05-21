@@ -1,4 +1,3 @@
-import { v4 as uuid } from "uuid";
 /**
  * Videos Database can be added here.
  * You can add videos of your wish with different attributes
@@ -7,7 +6,7 @@ import { v4 as uuid } from "uuid";
 
 export const videos = [
   {
-    _id: uuid(),
+    _id: "b1ce7adc-dc04-4cc9-9651-b2c1859976fb",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xGrTm3J0FTafmuQ85vF7ZCw94x6.jpg",
@@ -30,7 +29,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "a065ca1a-d2b8-4806-a4a2-ea1b3174a95a",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lD8dFIk9wDEvOwZw0RB47e346io.jpg",
@@ -53,7 +52,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "38b2f1c3-ccf3-4054-a93c-493bcae7c5ae",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/v0zhVgtqisaFsSVAOKxqwVOOlQr.jpg",
@@ -76,7 +75,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "fd754a63-17cc-4e77-86ed-5cbb81236f37",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/rshlQ6LfPRSWFhpGL4s5ZkIPR51.jpg",
@@ -99,7 +98,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "6a801001-8311-4ad8-93a5-bf80d1d715fa",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/pwpw1veVNW2Sls5sGbA9mqMYN49.jpg",
@@ -122,7 +121,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "ae2fdc0d-a948-411c-9b37-603a228d8f96",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/4EJSMQOM1bZPHvzqAQe87suBxdf.jpg",
@@ -145,7 +144,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "61a7caf0-6859-44ab-841a-11e6ad904daf",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/bnMKMhGJuvELSjRp8KpkuDsBDw2.jpg",
@@ -168,7 +167,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "086fb091-b216-4795-8289-0ebb7e0a1cc7",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/93xA62uLd5CwMOAs37eQ7vPc1iV.jpg",
@@ -191,7 +190,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "28dc3891-bd4c-4815-87d4-1387bdf98ab7",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/o3U4733mGsmieBeqs4Sw2ze6n53.jpg",
@@ -214,7 +213,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "f524fa94-86d7-4334-8062-e4dbfaf75671",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/4kb7uR1UmXa33U6GB6F9xckFlhn.jpg",
@@ -237,246 +236,225 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
-    original_title: "Doctor Strange in the Multiverse of Madness",
+    _id: "58db81a4-d1f2-49da-96a0-5e1fd2da07ce",
+    adult: false,
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/rl49Qr4KbfTSYjXYAN8fMDIt2xS.jpg",
+    genre_ids: [28, 878, 14],
+    id: 526896,
+    original_language: "en",
+    original_title: "Morbius",
+    overview:
+      "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/wRnbWt44nKjsFPrqSmwYki5vZtF.jpg",
+      "https://image.tmdb.org/t/p/original/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
+    release_date: "2022-03-30",
+    title: "Morbius",
+    video: false,
+    vote_average: 6.3,
+    vote_count: 938,
+    popularity: 6323.965,
+    media_type: "movie",
+    category: "Trending",
+  },
+  {
+    _id: "000d54cf-8d91-4a73-949e-8df5b2ffd86a",
+    adult: false,
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/cqnVuxXe6vA7wfNWubak3x36DKJ.jpg",
+    genre_ids: [28, 12, 14, 53],
+    id: 639933,
+    original_language: "en",
+    original_title: "The Northman",
+    poster_path:
+      "https://image.tmdb.org/t/p/original/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg",
+    title: "The Northman",
     video: false,
     vote_average: 7.5,
     overview:
-      "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
-    release_date: "2022-05-04",
-    title: "Doctor Strange in the Multiverse of Madness",
-    id: 453395,
-    adult: false,
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/AdyJH8kDm8xT8IKTlgpEC15ny4u.jpg",
-    genre_ids: [14, 28, 12],
-    vote_count: 1139,
-    original_language: "en",
-    popularity: 5007.839,
+      "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
+    release_date: "2022-04-07",
+    vote_count: 974,
+    popularity: 5772.331,
     media_type: "movie",
     category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
   },
   {
-    _id: uuid(),
-    original_title: "The Batman",
-    id: 414906,
+    _id: "bcc4a596-0d7a-48f2-8980-e20d0e9fe900",
     video: false,
-    vote_average: 7.8,
+    title: "The Batman",
+    id: 414906,
     overview:
       "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
     release_date: "2022-03-01",
-    title: "The Batman",
     adult: false,
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/5P8SmMzSNYikXpxil6BYzJ16611.jpg",
-    vote_count: 4401,
+      "https://image.tmdb.org/t/p/original/xHrp2pq73oi9D64xigPjWW1wcz1.jpg",
     genre_ids: [80, 9648, 53],
+    vote_count: 4672,
+    original_language: "en",
+    original_title: "The Batman",
     poster_path:
       "https://image.tmdb.org/t/p/original/74xTEgt7R36Fpooo50r9T25onhq.jpg",
-    original_language: "en",
-    popularity: 4740.532,
+    vote_average: 7.8,
+    popularity: 2950.956,
     media_type: "movie",
     category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
   },
   {
-    _id: uuid(),
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/aEGiJJP91HsKVTEPy1HhmN0wRLm.jpg",
-    title: "Uncharted",
-    genre_ids: [28, 12],
-    original_language: "en",
-    original_title: "Uncharted",
-    poster_path:
-      "https://image.tmdb.org/t/p/original/tlZpSxYuBRoVJBOpUrPdQe9FmFq.jpg",
+    _id: "ef556857-8729-4aff-bb9c-e5942659d7ec",
+    title: "The Lost City",
     video: false,
-    vote_average: 7.2,
+    vote_average: 6.8,
     overview:
-      "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother.",
-    release_date: "2022-02-10",
-    vote_count: 1796,
-    id: 335787,
-    adult: false,
-    popularity: 4449.169,
-    media_type: "movie",
-    category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
-  },
-  {
-    _id: uuid(),
-    poster_path:
-      "https://image.tmdb.org/t/p/original/YksR65as1ppF2N48TJAh2PLamX.jpg",
-    original_name: "Moon Knight",
-    origin_country: ["US"],
-    vote_average: 8.4,
-    overview:
-      "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
-    name: "Moon Knight",
-    first_air_date: "2022-03-30",
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/1uegR4uAxRxiMyX4nQnpzbXhrTw.jpg",
-    genre_ids: [10759, 10765, 9648],
-    vote_count: 715,
-    original_language: "en",
-    id: 92749,
-    popularity: 4518.44,
-    media_type: "tv",
-    category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
-  },
-  {
-    _id: uuid(),
-    id: 675353,
-    vote_average: 7.7,
-    overview:
-      "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.",
-    release_date: "2022-03-30",
-    vote_count: 1142,
+      "A reclusive romance novelist who was sure nothing could be worse than getting stuck on a book tour with her cover model, until a kidnapping attempt sweeps them both into a cutthroat jungle adventure, proving life can be so much stranger, and more romantic, than any of her paperback fictions.",
+    release_date: "2022-03-24",
+    id: 752623,
     adult: false,
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
-    video: false,
-    genre_ids: [28, 878, 35, 10751, 12],
-    title: "Sonic the Hedgehog 2",
-    original_language: "en",
-    original_title: "Sonic the Hedgehog 2",
-    poster_path:
-      "https://image.tmdb.org/t/p/original/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
-    popularity: 12851.144,
-    media_type: "movie",
-    category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
-  },
-  {
-    _id: uuid(),
-    release_date: "2022-04-27",
-    id: 829557,
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/t9hNIUFcy0tYu55IPxjxRTTdZ6X.jpg",
-    genre_ids: [10749, 18],
-    vote_count: 346,
-    original_language: "pl",
-    original_title: "365 Days: This Day",
-    poster_path:
-      "https://image.tmdb.org/t/p/original/7qU0SOVcQ8BTJLodcAlulUAG16C.jpg",
-    title: "365 Days: This Day",
-    video: false,
-    vote_average: 5.7,
-    adult: false,
-    overview:
-      "Laura and Massimo are back and hotter than ever. But the reunited couple's new beginning is complicated by Massimo’s family ties and a mysterious man who enters Laura’s life to win her heart and trust, at any cost.",
-    popularity: 1823.374,
-    media_type: "movie",
-    category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
-  },
-  {
-    _id: uuid(),
-    poster_path:
-      "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-    video: false,
-    id: 634649,
-    overview:
-      "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-    release_date: "2021-12-15",
-    vote_count: 12602,
-    adult: false,
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
-    vote_average: 8.1,
-    genre_ids: [28, 12, 878],
-    title: "Spider-Man: No Way Home",
-    original_language: "en",
-    original_title: "Spider-Man: No Way Home",
-    popularity: 3933.964,
-    media_type: "movie",
-    category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
-  },
-  {
-    _id: uuid(),
-    overview:
-      "When the infamous Bad Guys are finally caught after years of countless heists and being the world’s most-wanted villains, Mr. Wolf brokers a deal to save them all from prison.",
-    release_date: "2022-03-17",
-    adult: false,
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/fEe5fe82qHzjO4yej0o79etqsWV.jpg",
-    genre_ids: [16, 35, 28, 10751, 80],
-    title: "The Bad Guys",
-    original_language: "en",
-    original_title: "The Bad Guys",
-    poster_path:
-      "https://image.tmdb.org/t/p/original/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg",
-    vote_count: 305,
-    video: false,
-    id: 629542,
-    vote_average: 7.7,
-    popularity: 4730.107,
-    media_type: "movie",
-    category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
-  },
-  {
-    _id: uuid(),
-    genre_ids: [12, 35, 10749],
+      "https://image.tmdb.org/t/p/original/A3bsT0m1um6tvcmlIGxBwx9eAxn.jpg",
+    genre_ids: [28, 12, 35, 10749],
+    vote_count: 648,
     original_language: "en",
     original_title: "The Lost City",
     poster_path:
       "https://image.tmdb.org/t/p/original/neMZH82Stu91d3iqvLdNQfqPPyl.jpg",
+    popularity: 8293.346,
+    media_type: "movie",
+    category: "Trending",
+  },
+  {
+    _id: "693dcefa-cdbc-4c48-a25d-600277717a15",
     video: false,
-    vote_average: 6.9,
-    id: 752623,
+    vote_average: 8.7,
     overview:
-      "Follows a reclusive romance novelist who was sure nothing could be worse than getting stuck on a book tour with her cover model, until a kidnapping attempt sweeps them both into a cutthroat jungle adventure, proving life can be so much stranger, and more romantic, than any of her paperback fictions.",
+      "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
+    id: 545611,
+    title: "Everything Everywhere All at Once",
+    adult: false,
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/wp3vpSWAIjKSEeYb8F5NSZfONqw.jpg",
+    vote_count: 254,
+    genre_ids: [28, 12, 878, 35],
     release_date: "2022-03-24",
-    vote_count: 292,
-    title: "The Lost City",
-    adult: false,
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/A3bsT0m1um6tvcmlIGxBwx9eAxn.jpg",
-    popularity: 505.424,
-    media_type: "movie",
-    category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
-  },
-  {
-    _id: uuid(),
-    overview:
-      "Decorated veteran Will Sharp, desperate for money to cover his wife's medical bills, asks for help from his adoptive brother Danny. A charismatic career criminal, Danny instead offers him a score: the biggest bank heist in Los Angeles history: $32 million.",
-    release_date: "2022-03-16",
-    adult: false,
-    backdrop_path:
-      "https://image.tmdb.org/t/p/original/192vHmAPbk5esL34XMKZ1YLGFjr.jpg",
-    genre_ids: [28, 53, 80],
-    title: "Ambulance",
     original_language: "en",
-    original_title: "Ambulance",
+    original_title: "Everything Everywhere All at Once",
     poster_path:
-      "https://image.tmdb.org/t/p/original/kuxjMVuc3VTD7p42TZpJNsSrM1V.jpg",
-    vote_count: 515,
-    video: false,
-    id: 763285,
-    vote_average: 7.0,
-    popularity: 2670.696,
+      "https://image.tmdb.org/t/p/original/rKvCys0fMIIi1X9rmJBxTPLAtoU.jpg",
+    popularity: 325.871,
     media_type: "movie",
     category: "Trending",
-    liked: false,
-    addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "16dfbc01-a547-45e8-b5c3-34082297eb05",
+    first_air_date: "2022-03-30",
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/vfWdZYGR5505zrCdgTHteFyARu3.jpg",
+    genre_ids: [10759, 10765, 9648],
+    original_name: "Moon Knight",
+    origin_country: ["US"],
+    id: 92749,
+    vote_count: 840,
+    poster_path:
+      "https://image.tmdb.org/t/p/original/YksR65as1ppF2N48TJAh2PLamX.jpg",
+    vote_average: 8.3,
+    overview:
+      "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+    name: "Moon Knight",
+    original_language: "en",
+    popularity: 2616.606,
+    media_type: "tv",
+    category: "Trending",
+  },
+  {
+    _id: "3950b21d-af1d-4b3d-8bb6-17c5ee910287",
+    vote_average: 8.7,
+    overview:
+      "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+    name: "Halo",
+    id: 52814,
+    vote_count: 711,
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/1qpUk27LVI9UoTS7S0EixUBj5aR.jpg",
+    poster_path:
+      "https://image.tmdb.org/t/p/original/eO0QV5qJaEngP1Ax9w3eV6bJG2f.jpg",
+    genre_ids: [10759, 10765],
+    first_air_date: "2022-03-24",
+    original_language: "en",
+    original_name: "Halo",
+    origin_country: ["US"],
+    popularity: 6176.562,
+    media_type: "tv",
+    category: "Trending",
+  },
+  {
+    _id: "a930635d-9053-47fa-8d04-b04085ca5486",
+    release_date: "2022-04-06",
+    adult: false,
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/zGLHX92Gk96O1DJvLil7ObJTbaL.jpg",
+    id: 338953,
+    genre_ids: [28, 12, 14],
+    original_language: "en",
+    original_title: "Fantastic Beasts: The Secrets of Dumbledore",
+    poster_path:
+      "https://image.tmdb.org/t/p/original/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg",
+    vote_count: 1062,
+    video: false,
+    vote_average: 6.7,
+    title: "Fantastic Beasts: The Secrets of Dumbledore",
+    overview:
+      "Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.",
+    popularity: 787.576,
+    media_type: "movie",
+    category: "Trending",
+  },
+  {
+    _id: "2b982b80-8ddb-491d-a0a9-8a517eab671d",
+    original_language: "en",
+    original_title: "Spider-Man: No Way Home",
+    id: 634649,
+    video: false,
+    vote_average: 8.1,
+    overview:
+      "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+    release_date: "2021-12-15",
+    title: "Spider-Man: No Way Home",
+    adult: false,
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
+    vote_count: 12901,
+    genre_ids: [28, 12, 878],
+    poster_path:
+      "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    popularity: 2676.693,
+    media_type: "movie",
+    category: "Trending",
+  },
+  {
+    _id: "002cdf69-1b35-4046-8d90-b5dd8104be5c",
+    poster_path:
+      "https://image.tmdb.org/t/p/original/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg",
+    id: 629542,
+    vote_average: 7.8,
+    overview:
+      "When the infamous Bad Guys are finally caught after years of countless heists and being the world’s most-wanted villains, Mr. Wolf brokers a deal to save them all from prison.",
+    release_date: "2022-03-17",
+    title: "The Bad Guys",
+    adult: false,
+    backdrop_path:
+      "https://image.tmdb.org/t/p/original/fEe5fe82qHzjO4yej0o79etqsWV.jpg",
+    vote_count: 450,
+    genre_ids: [16, 35, 28, 10751, 80],
+    video: false,
+    original_language: "en",
+    original_title: "The Bad Guys",
+    popularity: 2622.506,
+    media_type: "movie",
+    category: "Trending",
+  },
+  {
+    _id: "4d60ad18-f326-4203-bc94-45599208c8f4",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
@@ -499,7 +477,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "cd8c1c60-7b82-4e4c-b39f-7fa1ff77b047",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/AdyJH8kDm8xT8IKTlgpEC15ny4u.jpg",
@@ -522,7 +500,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "90d14150-b10b-4ba8-ad0e-64da32c848c3",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/fEe5fe82qHzjO4yej0o79etqsWV.jpg",
@@ -545,7 +523,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "1deee6fb-2750-496a-a0b8-9aa5aa7fd652",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/aEGiJJP91HsKVTEPy1HhmN0wRLm.jpg",
@@ -568,7 +546,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "32b4622d-19ae-45aa-bf21-53bc5b3aa8f3",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
@@ -591,7 +569,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "0b126af7-d5ea-458e-9617-467cfd0875f2",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/eQN31P4IEhyp6NkdccvppJnyuJ4.jpg",
@@ -614,7 +592,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "24b14079-084d-412d-837d-dd31cdb417d3",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/192vHmAPbk5esL34XMKZ1YLGFjr.jpg",
@@ -637,7 +615,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "95bd6f52-7984-4cf2-affa-5de77a17d375",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/x747ZvF0CcYYTTpPRCoUrxA2cYy.jpg",
@@ -660,7 +638,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "ea1f7821-9da0-4ff6-a04a-29ad4aaf3994",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xzLOQjF1w4og963lxsGJwMhPbZ.jpg",
@@ -683,7 +661,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "9dbefb5a-7d56-4edf-8ef4-193db7d917dc",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xicKILMzPn6XZYCOpWwaxlUzg6S.jpg",
@@ -706,7 +684,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "5e9d1f2d-f15f-476d-9772-822d39a737d4",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/wPU78OPN4BYEgWYdXyg0phMee64.jpg",
@@ -729,7 +707,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "aab1fc24-e9d8-4b97-b960-3369ddb0f25c",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/90ez6ArvpO8bvpyIngBuwXOqJm5.jpg",
@@ -752,7 +730,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "179c2ee9-3397-4b04-b378-be75d7007fee",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/AbgEQO2mneCSOc8CSnOMa8pBS8I.jpg",
@@ -775,7 +753,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "6c484017-0427-4265-bc0f-e9724da7d5b2",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/ryr532va3rN7MADPAO2updA4Akz.jpg",
@@ -798,7 +776,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "39db3ddb-637f-4fe8-8da6-0445b39a7c0d",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/loRmRzQXZeqG78TqZuyvSlEQfZb.jpg",
@@ -821,7 +799,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "1fe3cd93-fdb8-406d-8bfb-4e16acdd90ee",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/v5CEt88iDsuoMaW1Q5Msu9UZdEt.jpg",
@@ -844,7 +822,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "159d3dc9-6212-4ed5-9750-8526437322b3",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/poec6RqOKY9iSiIUmfyfPfiLtvB.jpg",
@@ -867,7 +845,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "4f3c4cd7-36ce-494f-a0b1-1c753929f927",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/3RMLbSEXOn1CzLoNT7xFeLfdxhq.jpg",
@@ -890,7 +868,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "26a09768-25a4-499a-a75b-8ea57d787903",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/jtAI6OJIWLWiRItNSZoWjrsUtmi.jpg",
@@ -913,7 +891,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "107d0874-e72c-49ec-aa70-2a9063a5bc44",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lp6SmwyNRspEYkkLXFEVuNlCw77.jpg",
@@ -936,7 +914,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "52619305-d157-4b51-a37a-4e2aee0f069d",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/i0zbSmiyyylh7H3Qb4jgscz46Pm.jpg",
@@ -959,7 +937,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "080b530f-c89a-4051-947e-006c398015c8",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/An1nKjXahrChfEbZ3MAE8fsiut1.jpg",
@@ -982,7 +960,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "bed4a6ce-3aa0-4b9b-8c7d-1765814faca1",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/u5lEdCvKLkm1EhfQt3qe8Rr5DvR.jpg",
@@ -1005,7 +983,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "b2481aa8-376c-4a1f-b72a-efb1f870e0ec",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/33wnBK5NxvuKQv0Cxo3wMv0eR7F.jpg",
@@ -1028,7 +1006,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "a37e2bde-91e1-4e23-aef5-2143c1c19ac9",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xHRabofjmMGoIV3mb6xgy4nwOcS.jpg",
@@ -1051,7 +1029,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "c7874e2b-3501-4e72-a76c-1835fd935195",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/o76ZDm8PS9791XiuieNB93UZcRV.jpg",
@@ -1074,7 +1052,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "904ce94e-c2ae-447d-ac74-355db8ab0f2c",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/ifUfE79O1raUwbaQRIB7XnFz5ZC.jpg",
@@ -1097,7 +1075,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "c5e2a290-9c1e-4a1b-b4e3-799140f2645d",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/aTSA5zMWlVFTYBIZxTCMbLkfOtb.jpg",
@@ -1120,7 +1098,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "efa793c3-a709-4a2a-ba7b-6f0abae85771",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/hk4PwhKhT7q7jp1lvA8aiYqDluy.jpg",
@@ -1143,7 +1121,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "0026396b-e9bb-4095-a57e-e05be8847a9c",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/5UANdP8xXHyVOGknfJlzQ7muLj3.jpg",
@@ -1166,7 +1144,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "18c0478f-8040-4836-a683-52d2c4009bc9",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
@@ -1189,7 +1167,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "8cfca008-79b3-4238-84a9-28db2c54e4d3",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/fEe5fe82qHzjO4yej0o79etqsWV.jpg",
@@ -1212,7 +1190,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "60bc0a21-a23b-4adb-a9a6-fd40167405bd",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/fOy2Jurz9k6RnJnMUMRDAgBwru2.jpg",
@@ -1235,7 +1213,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "4569a78b-70d3-4b05-8049-81d61423e661",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg",
@@ -1258,7 +1236,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "6936cf5b-8c4d-428b-b1f9-4dcc9173825d",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/j8ve0iuDEnrcSpUxL62uvI4wnwB.jpg",
@@ -1281,7 +1259,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "5bbda9aa-040a-4601-889d-826fdd08da83",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/tq3klWQevRK0Or0cGhsw0h3FDWQ.jpg",
@@ -1304,7 +1282,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "3869c441-8e04-475d-9997-6350300ebefb",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/qBLEWvJNVsehJkEJqIigPsWyBse.jpg",
@@ -1327,7 +1305,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "4ca57189-46cd-455b-b6b7-5dc30b54dd51",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/ewUqXnwiRLhgmGhuksOdLgh49Ch.jpg",
@@ -1350,7 +1328,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "2a43777f-358e-4d56-b7c5-d7c7d4708796",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/eG0oOQVsniPAuecPzDD1B1gnYWy.jpg",
@@ -1373,7 +1351,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "d63be8f8-797c-419d-8c77-5ff89f106547",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/stmYfCUGd8Iy6kAMBr6AmWqx8Bq.jpg",
@@ -1396,7 +1374,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "1cf3b640-0082-40fd-bc55-960ae7dd7151",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/t9hNIUFcy0tYu55IPxjxRTTdZ6X.jpg",
@@ -1419,7 +1397,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "c40906b8-5047-43d0-8fd6-700b5b81ef76",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/j8ve0iuDEnrcSpUxL62uvI4wnwB.jpg",
@@ -1442,7 +1420,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "bc24f930-65ad-4d8e-9b51-5eadf5e501be",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/vrNKZrPscucCO5SnHEpp5DZ7QWx.jpg",
@@ -1465,7 +1443,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "02954c3e-2be1-41a9-9fa4-be4cccf9981e",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/i9rEpTqC6aIQOWOc4PDEEAE3hFe.jpg",
@@ -1488,7 +1466,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "e15c2766-9f02-424e-adbd-d17f65677794",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/A3bsT0m1um6tvcmlIGxBwx9eAxn.jpg",
@@ -1511,7 +1489,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "75f69484-3dad-420c-bd02-f3dc0142b76a",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/4rsomWxlqnHt3muGYK06auhOib6.jpg",
@@ -1534,7 +1512,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "95ea40a7-53be-4780-90d0-abd19deb9ef2",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/sqLNgWTMBhLBRY26SwwfWcSI5qq.jpg",
@@ -1557,7 +1535,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "8ba8eeb3-f3c5-44bd-9afe-ec8d941c1ecb",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lD8dFIk9wDEvOwZw0RB47e346io.jpg",
@@ -1580,7 +1558,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "5d2eff0e-47ae-46b9-896d-2cb073ea17d6",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lV3UFPPxDIPelh46G9oySXN9Mcz.jpg",
@@ -1603,7 +1581,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "4129528d-55ff-4a42-85e4-0cd53d56524e",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/o2OSpKzXuB1edCDyVC2MXAxXwyJ.jpg",
@@ -1626,7 +1604,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "4e47a9d1-b898-4288-9d59-9589c2318a3c",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/6KgpxK3u4zOKLhTa16XNiYiDkJf.jpg",
@@ -1649,7 +1627,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "daa18d2a-05c0-4b4e-b944-33cce032b538",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/f2J8DpT5bqV0AiI9VVcfiuqKo5l.jpg",
@@ -1672,7 +1650,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "8904f0c6-bd78-4f6a-9b0e-1052ea49b6e7",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/nXH3PbWtH7qpWlaAwFCvvh40pk8.jpg",
@@ -1695,7 +1673,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "8904f0c6-bd78-4f6a-9b0e-1052ea49b6ea",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/8rft8A9nH43IReybFtYt21ezfMK.jpg",
@@ -1718,7 +1696,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "b1ce7adc-dc04-4cc9-9651-b2c1859976f9",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/l2Szl45c6YTszCqpNZVcU8b0M8P.jpg",
@@ -1741,7 +1719,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "a065ca1a-d2b8-4806-a4a2-ea1b3174a951",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/kxj8WaxRzxUcJn7LathZBDyN7Ys.jpg",
@@ -1764,7 +1742,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "19b2f1c3-ccf3-4054-a93c-493bcae7c5ae",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/5dxftrwxnFHBkSKHJT3x1xwIydn.jpg",
@@ -1787,7 +1765,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "zd754a63-17cc-4e77-86ed-5cbb81236f37",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/slh9qCbyDcMN2rC9FiueZ6pR2fj.jpg",
@@ -1810,7 +1788,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "086fb091-b216-4195-8289-0ebb1e0a1cc1",
     adult: false,
     backdrop_path: null,
     genre_ids: [99],
@@ -1831,7 +1809,7 @@ export const videos = [
     addedToWatchLater: false,
   },
   {
-    _id: uuid(),
+    _id: "f124fa94-86d7-4334-8062-e4dbfaf75671",
     adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/uO6ZUez70Twan92pqoV60T9kiGH.jpg",

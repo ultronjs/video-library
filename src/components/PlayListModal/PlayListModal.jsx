@@ -12,7 +12,6 @@ import { v4 as uuid } from "uuid";
 
 function PlayListModal(props) {
   const [showCreateOption,setShowCreateOption] = useState(false)
-  const [checked,setChecked] = useState(true)
   const {
     playlists,
     getPlayListsData,
@@ -30,7 +29,7 @@ function PlayListModal(props) {
   console.log(createPlayList)
   useEffect(() => {
     getPlayListsData()
-  }, [])
+  }, [playlists])
 
   return (
     <>
@@ -57,6 +56,14 @@ function PlayListModal(props) {
                   return (
                     <div className="flex flex-ai-center gap-s pb-x-small">
                       <input
+                        defaultChecked={
+                          playlist.videos.length > 0 &&
+                          playlist.videos.filter(
+                            (video) => video._id === props.video._id
+                          ).length>0
+                            ? true
+                            : false
+                        }
                         key={playlist._id}
                         type="checkbox"
                         className="input_playlist_checkbox"
@@ -74,7 +81,6 @@ function PlayListModal(props) {
                       <label>{playlist.title}</label>
                     </div>
                   );
-                setChecked(false)
                 })}
             </div>
           </div>

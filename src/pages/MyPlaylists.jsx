@@ -1,13 +1,18 @@
 import React from 'react'
-import Nav from "../components/Nav/Nav";
+import { usePlayLists } from '../context';
+import {Nav,PlayListCard} from "../components"
 
 function MyPlaylists() {
+  const {playlists} = usePlayLists()
   return (
-    <div>
+    <div className="main_container">
       <Nav />
-      MyPlaylist
+      <h2 className="page_title">PlayLists</h2>
+      <div className="video_container">
+        {playlists && playlists.map((playlist) => <PlayListCard playlist={playlist} />)}
+      </div>
     </div>
-  )
+  );
 }
 
 export default MyPlaylists

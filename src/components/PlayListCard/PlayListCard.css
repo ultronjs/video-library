@@ -1,0 +1,15 @@
+.playlist_card_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--input-background);
+    border-radius: 1rem;
+    padding: .5rem;
+}
+.icon{
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.2);
+
+}

@@ -1,19 +1,22 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import "../index.css"
 import { AiOutlineLike, AiFillLike } from "react-icons/ai";
 import {
   MdAddCircleOutline,
   MdOutlineCancel,
   MdCheckCircleOutline,
+  MdPlaylistAdd,
 } from "react-icons/md";
 import {BsFillPlayCircleFill} from "react-icons/bs"
 import { useLikedVideo, useWatchLater} from "../context"
+import PlayListModal from './PlayListModal/PlayListModal';
 
 function VideoPreviewModal(props) {
 
   const { video, setShowVideoPreviewModal } = props; 
   const { postWatchLaterData,deleteWatchLaterData} = useWatchLater()
   const { postLikedVideoData, deleteLikedVideoData } = useLikedVideo();
+  const [ showPlayListModal, setShowPlayListModal] = useState(false)
   const baseURL = "https://image.tmdb.org/t/p/original/";
   return (
     <>
@@ -46,7 +49,6 @@ function VideoPreviewModal(props) {
                 onClick={() => postLikedVideoData(video)}
               />
             )}
-
             {video.addedToWatchLater ? (
               <MdCheckCircleOutline
                 onClick={() => deleteWatchLaterData(video._id)}
@@ -60,6 +62,11 @@ function VideoPreviewModal(props) {
                 size={35}
               />
             )}
+            <MdPlaylistAdd
+              className="modal_action"
+              size={35}
+              onClick={() => setShowPlayListModal(true)}
+            />
           </div>
           <div className="modal_body">
             <h2>{video.title}</h2>
@@ -68,6 +75,9 @@ function VideoPreviewModal(props) {
           </div>
         </div>
       </div>
+      {showPlayListModal && (
+        <PlayListModal setShowPlayListModal={setShowPlayListModal} video={video}/>
+      )}
     </>
   );
 }

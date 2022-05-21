@@ -1,14 +1,16 @@
 import React,{useEffect} from 'react'
 import {Nav,VideoCard} from "../components";
-import { useWatchLater } from '../context';
+import { useHistory, useWatchLater } from '../context';
 import "../index.css"
 import "../components/Row/Row.css";
 
 function WatchLater() {
   const { watchLater, getWatchLaterData } = useWatchLater();
+  const {getHistoryVideoData} = useHistory()
 
   useEffect(() => {
     getWatchLaterData()
+    getHistoryVideoData();
   }, [])
   
   return (

@@ -17,12 +17,11 @@ code {
 }
 
 :root{
-  --primary-color:#E50914;
+  --primary-color:#58BC82;
   --primary-black:#171200;
   --input-background:#333333;
   --primary-white:#FFFFFF;
   --primary-grey:#7C8083
-
 }
 
 /*Form Container for the form such as (Loign,SignUp)*/
@@ -154,7 +153,9 @@ color: var(--primary-black);
   transform: scale(1.2);
 }
 .main_container{
-  width: 100vw;
+  box-sizing: border-box;
+  margin: 1rem;
+  width: 95vw;
   height: 100%;
 }
 
@@ -168,11 +169,30 @@ color: var(--primary-black);
 }
 .page_title{
   margin-top: 80px;
-  margin-left: 20px;
-
+}
+.page_title_action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .toast_wrapper{
   background-color: var(--input-background);
   z-index: 20;
+}
+
+.video_page_container{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.history_container{
+  padding-top: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }

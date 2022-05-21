@@ -8,8 +8,9 @@ import {
   MdPlaylistAdd,
 } from "react-icons/md";
 import {BsFillPlayCircleFill} from "react-icons/bs"
-import { useLikedVideo, useWatchLater} from "../context"
+import { useAuth, useLikedVideo, useWatchLater,useHistory} from "../context"
 import PlayListModal from './PlayListModal/PlayListModal';
+import { useNavigate } from 'react-router';
 
 function VideoPreviewModal(props) {
 
@@ -17,6 +18,15 @@ function VideoPreviewModal(props) {
   const { postWatchLaterData,deleteWatchLaterData} = useWatchLater()
   const { postLikedVideoData, deleteLikedVideoData } = useLikedVideo();
   const [ showPlayListModal, setShowPlayListModal] = useState(false)
+  const {signInStatus} = useAuth()
+  const navigate = useNavigate()
+    const { history, postHistoryVideoData } = useHistory();
+    const playButtonHandler = (video) => {
+      if (!history.some((element) => element._id === video._id)) {
+        postHistoryVideoData(video);
+      }
+      navigate(`/video/${video._id}`);
+    };
   const baseURL = "https://image.tmdb.org/t/p/original/";
   return (
     <>
@@ -34,40 +44,55 @@ function VideoPreviewModal(props) {
               alt={video.name}
             />
           </div>
-          <div className="modal_footer">
-            <BsFillPlayCircleFill className="modal_action" size={35} />
-            {video.liked ? (
-              <AiFillLike
+          {signInStatus.status ? (
+            <div className="modal_footer">
+              <BsFillPlayCircleFill
                 className="modal_action"
                 size={35}
-                onClick={() => deleteLikedVideoData(video._id)}
+                onClick={() => playButtonHandler(video)}
               />
-            ) : (
-              <AiOutlineLike
+              {video.liked ? (
+                <AiFillLike
+                  className="modal_action"
+                  size={35}
+                  onClick={() => deleteLikedVideoData(video._id)}
+                />
+              ) : (
+                <AiOutlineLike
+                  className="modal_action"
+                  size={35}
+                  onClick={() => postLikedVideoData(video)}
+                />
+              )}
+              {video.addedToWatchLater ? (
+                <MdCheckCircleOutline
+                  onClick={() => deleteWatchLaterData(video._id)}
+                  className="modal_action"
+                  size={35}
+                />
+              ) : (
+                <MdAddCircleOutline
+                  onClick={() => postWatchLaterData(video)}
+                  className="modal_action"
+                  size={35}
+                />
+              )}
+              <MdPlaylistAdd
                 className="modal_action"
                 size={35}
-                onClick={() => postLikedVideoData(video)}
+                onClick={() => setShowPlayListModal(true)}
               />
-            )}
-            {video.addedToWatchLater ? (
-              <MdCheckCircleOutline
-                onClick={() => deleteWatchLaterData(video._id)}
+            </div>
+          ) : (
+            <div className="modal_footer">
+              <BsFillPlayCircleFill
                 className="modal_action"
                 size={35}
+                onClick={() => navigate(`/video/${video._id}`)}
               />
-            ) : (
-              <MdAddCircleOutline
-                onClick={() => postWatchLaterData(video)}
-                className="modal_action"
-                size={35}
-              />
-            )}
-            <MdPlaylistAdd
-              className="modal_action"
-              size={35}
-              onClick={() => setShowPlayListModal(true)}
-            />
-          </div>
+            </div>
+          )}
+
           <div className="modal_body">
             <h2>{video.title}</h2>
             <span>Category: {video.category}</span>
@@ -76,7 +101,10 @@ function VideoPreviewModal(props) {
         </div>
       </div>
       {showPlayListModal && (
-        <PlayListModal setShowPlayListModal={setShowPlayListModal} video={video}/>
+        <PlayListModal
+          setShowPlayListModal={setShowPlayListModal}
+          video={video}
+        />
       )}
     </>
   );

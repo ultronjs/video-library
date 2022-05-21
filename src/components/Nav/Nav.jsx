@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import {MdOndemandVideo} from "react-icons/md"
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink,useNavigate } from "react-router-dom";
 import { useAuth } from "../../context";
 
 function Nav() {
   const [show, handleShow] = useState(false);
   const {signInStatus} = useAuth()
+  const navigate = useNavigate()
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         handleShow(true);
       } else handleShow(false);
     });
@@ -18,7 +19,7 @@ function Nav() {
   return (
     <div className={`nav ${show && "nav_black"}`}>
       <div className="nav_left_side">
-        <div>
+        <div onClick={() => navigate("/")}>
           <MdOndemandVideo size={30} className="color_red" />
           <img
             className="nav_logo"
@@ -26,53 +27,55 @@ function Nav() {
             alt="Netflix"
           />
         </div>
-        <div className="nav_links">
-          <NavLink
-            to="/"
-            activeStyle={{
-              fontWeight: "bold",
-            }}
-            className="nav_link"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/watchlater"
-            activeStyle={{
-              fontWeight: "bold",
-            }}
-            className="nav_link"
-          >
-            My List
-          </NavLink>
-          <NavLink
-            to="/history"
-            activeStyle={{
-              fontWeight: "bold",
-            }}
-            className="nav_link"
-          >
-            History
-          </NavLink>
-          <NavLink
-            to="/myplaylists"
-            activeStyle={{
-              fontWeight: "bold",
-            }}
-            className="nav_link"
-          >
-            Playlists
-          </NavLink>
-          <NavLink
-            to="/likedvideos"
-            activeStyle={{
-              fontWeight: "bold",
-            }}
-            className="nav_link"
-          >
-            Liked Videos
-          </NavLink>
-        </div>
+        {signInStatus.status && (
+          <div className="nav_links">
+            <NavLink
+              to="/"
+              activeStyle={{
+                fontWeight: "bold",
+              }}
+              className="nav_link"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/watchlater"
+              activeStyle={{
+                fontWeight: "bold",
+              }}
+              className="nav_link"
+            >
+              My List
+            </NavLink>
+            <NavLink
+              to="/history"
+              activeStyle={{
+                fontWeight: "bold",
+              }}
+              className="nav_link"
+            >
+              History
+            </NavLink>
+            <NavLink
+              to="/myplaylists"
+              activeStyle={{
+                fontWeight: "bold",
+              }}
+              className="nav_link"
+            >
+              Playlists
+            </NavLink>
+            <NavLink
+              to="/likedvideos"
+              activeStyle={{
+                fontWeight: "bold",
+              }}
+              className="nav_link"
+            >
+              Liked Videos
+            </NavLink>
+          </div>
+        )}
       </div>
       {signInStatus.status ? (
         <img

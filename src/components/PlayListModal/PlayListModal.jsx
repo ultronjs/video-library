@@ -12,11 +12,11 @@ import { v4 as uuid } from "uuid";
 
 function PlayListModal(props) {
   const [showCreateOption,setShowCreateOption] = useState(false)
+  const [checked,setChecked] = useState(true)
   const {
     playlists,
     getPlayListsData,
     postPlayListsData,
-    deletePlayListsData,
     postVideoInPlayList,
     removeVideoInPlayList,
   } = usePlayLists();
@@ -53,23 +53,29 @@ function PlayListModal(props) {
           <div className="modal_body flex flex-col">
             <div className="modal_playlist_list">
               {playlists.length > 0 &&
-                playlists.map((playlist) => (
-                  <div className="flex flex-ai-center gap-s pb-x-small">
-                    <input
-                      key={playlist._id}
-                      type="checkbox"
-                      className="input_playlist_checkbox"
-                      onChange={(e) => {
-                                  if(e.target.checked){
-                                    postVideoInPlayList(playlist._id,props.video)
-                                  }else{
-                                    removeVideoInPlayList(playlist._id, props.video._id);
-                                  }
-                                }}
-                    />
-                    <label>{playlist.title}</label>
-                  </div>
-                ))}
+                playlists.map((playlist) => {
+                  return (
+                    <div className="flex flex-ai-center gap-s pb-x-small">
+                      <input
+                        key={playlist._id}
+                        type="checkbox"
+                        className="input_playlist_checkbox"
+                        onChange={(e) => {
+                          if (e.target.checked) {
+                            postVideoInPlayList(playlist._id, props.video);
+                          } else {
+                            removeVideoInPlayList(
+                              playlist._id,
+                              props.video._id
+                            );
+                          }
+                        }}
+                      />
+                      <label>{playlist.title}</label>
+                    </div>
+                  );
+                setChecked(false)
+                })}
             </div>
           </div>
           {showCreateOption || playlists.length === 0 ? (

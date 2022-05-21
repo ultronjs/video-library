@@ -8,7 +8,7 @@ import { v4 as uuid } from "uuid";
 export const videos = [
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xGrTm3J0FTafmuQ85vF7ZCw94x6.jpg",
     genre_ids: [18, 36, 12],
@@ -26,12 +26,12 @@ export const videos = [
     vote_average: 6.1,
     category: "Originals",
     vote_count: 355,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lD8dFIk9wDEvOwZw0RB47e346io.jpg",
     genre_ids: [18, 36, 10749],
@@ -49,12 +49,12 @@ export const videos = [
     vote_average: 7.6,
     category: "Originals",
     vote_count: 47,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/v0zhVgtqisaFsSVAOKxqwVOOlQr.jpg",
     genre_ids: [28, 18, 36],
@@ -72,12 +72,12 @@ export const videos = [
     vote_average: 7.6,
     category: "Originals",
     vote_count: 2077,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/rshlQ6LfPRSWFhpGL4s5ZkIPR51.jpg",
     genre_ids: [18, 36, 10752],
@@ -95,12 +95,12 @@ export const videos = [
     vote_average: 8.2,
     category: "Originals",
     vote_count: 10890,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/pwpw1veVNW2Sls5sGbA9mqMYN49.jpg",
     genre_ids: [28, 12, 35, 36],
@@ -118,12 +118,12 @@ export const videos = [
     vote_average: 6.7,
     category: "Originals",
     vote_count: 88,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/4EJSMQOM1bZPHvzqAQe87suBxdf.jpg",
     genre_ids: [10752, 36, 18],
@@ -141,12 +141,12 @@ export const videos = [
     vote_average: 6.5,
     category: "Originals",
     vote_count: 104,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/bnMKMhGJuvELSjRp8KpkuDsBDw2.jpg",
     genre_ids: [12, 36, 18],
@@ -164,12 +164,12 @@ export const videos = [
     vote_average: 6.9,
     category: "Originals",
     vote_count: 272,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/93xA62uLd5CwMOAs37eQ7vPc1iV.jpg",
     genre_ids: [10402, 18, 36],
@@ -187,12 +187,12 @@ export const videos = [
     vote_average: 8,
     category: "Originals",
     vote_count: 14599,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/o3U4733mGsmieBeqs4Sw2ze6n53.jpg",
     genre_ids: [14, 18, 10749, 36],
@@ -210,12 +210,12 @@ export const videos = [
     vote_average: 7.4,
     category: "Originals",
     vote_count: 505,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/4kb7uR1UmXa33U6GB6F9xckFlhn.jpg",
     genre_ids: [18, 36],
@@ -233,10 +233,11 @@ export const videos = [
     vote_average: 7.9,
     category: "Originals",
     vote_count: 1290,
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     original_title: "Doctor Strange in the Multiverse of Madness",
     poster_path:
       "https://image.tmdb.org/t/p/original/wRnbWt44nKjsFPrqSmwYki5vZtF.jpg",
@@ -256,10 +257,11 @@ export const videos = [
     popularity: 5007.839,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     original_title: "The Batman",
     id: 414906,
     video: false,
@@ -279,10 +281,11 @@ export const videos = [
     popularity: 4740.532,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     backdrop_path:
       "https://image.tmdb.org/t/p/original/aEGiJJP91HsKVTEPy1HhmN0wRLm.jpg",
     title: "Uncharted",
@@ -302,10 +305,11 @@ export const videos = [
     popularity: 4449.169,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     poster_path:
       "https://image.tmdb.org/t/p/original/YksR65as1ppF2N48TJAh2PLamX.jpg",
     original_name: "Moon Knight",
@@ -324,10 +328,11 @@ export const videos = [
     popularity: 4518.44,
     media_type: "tv",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     id: 675353,
     vote_average: 7.7,
     overview:
@@ -347,10 +352,11 @@ export const videos = [
     popularity: 12851.144,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     release_date: "2022-04-27",
     id: 829557,
     backdrop_path:
@@ -370,10 +376,11 @@ export const videos = [
     popularity: 1823.374,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     poster_path:
       "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
     video: false,
@@ -393,10 +400,11 @@ export const videos = [
     popularity: 3933.964,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     overview:
       "When the infamous Bad Guys are finally caught after years of countless heists and being the world’s most-wanted villains, Mr. Wolf brokers a deal to save them all from prison.",
     release_date: "2022-03-17",
@@ -416,10 +424,11 @@ export const videos = [
     popularity: 4730.107,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     genre_ids: [12, 35, 10749],
     original_language: "en",
     original_title: "The Lost City",
@@ -439,10 +448,11 @@ export const videos = [
     popularity: 505.424,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
+    _id: uuid(),
     overview:
       "Decorated veteran Will Sharp, desperate for money to cover his wife's medical bills, asks for help from his adoptive brother Danny. A charismatic career criminal, Danny instead offers him a score: the biggest bank heist in Los Angeles history: $32 million.",
     release_date: "2022-03-16",
@@ -462,12 +472,12 @@ export const videos = [
     popularity: 2670.696,
     media_type: "movie",
     category: "Trending",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
     genre_ids: [28, 878, 35, 10751, 12],
@@ -485,12 +495,12 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 1142,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/AdyJH8kDm8xT8IKTlgpEC15ny4u.jpg",
     genre_ids: [14, 28, 12],
@@ -508,12 +518,12 @@ export const videos = [
     vote_average: 7.5,
     vote_count: 1139,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/fEe5fe82qHzjO4yej0o79etqsWV.jpg",
     genre_ids: [16, 35, 28, 10751, 80],
@@ -531,12 +541,12 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 305,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/aEGiJJP91HsKVTEPy1HhmN0wRLm.jpg",
     genre_ids: [28, 12],
@@ -554,12 +564,12 @@ export const videos = [
     vote_average: 7.2,
     vote_count: 1796,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
     genre_ids: [28, 12, 878],
@@ -577,12 +587,12 @@ export const videos = [
     vote_average: 8.1,
     vote_count: 12602,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/eQN31P4IEhyp6NkdccvppJnyuJ4.jpg",
     genre_ids: [28, 12, 14, 878],
@@ -600,12 +610,12 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 18894,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/192vHmAPbk5esL34XMKZ1YLGFjr.jpg",
     genre_ids: [28, 53, 80],
@@ -623,12 +633,12 @@ export const videos = [
     vote_average: 7,
     vote_count: 515,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/x747ZvF0CcYYTTpPRCoUrxA2cYy.jpg",
     genre_ids: [878, 12, 28],
@@ -646,12 +656,12 @@ export const videos = [
     vote_average: 6.5,
     vote_count: 935,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xzLOQjF1w4og963lxsGJwMhPbZ.jpg",
     genre_ids: [28, 80, 18],
@@ -669,12 +679,12 @@ export const videos = [
     vote_average: 6.3,
     vote_count: 46,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xicKILMzPn6XZYCOpWwaxlUzg6S.jpg",
     genre_ids: [53, 28],
@@ -692,12 +702,12 @@ export const videos = [
     vote_average: 6,
     vote_count: 206,
     category: "Action",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/wPU78OPN4BYEgWYdXyg0phMee64.jpg",
     genre_ids: [18, 80],
@@ -715,12 +725,12 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 21370,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/90ez6ArvpO8bvpyIngBuwXOqJm5.jpg",
     genre_ids: [35, 18, 10749],
@@ -738,12 +748,12 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 3619,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/AbgEQO2mneCSOc8CSnOMa8pBS8I.jpg",
     genre_ids: [18, 80],
@@ -761,12 +771,12 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 15927,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/ryr532va3rN7MADPAO2updA4Akz.jpg",
     genre_ids: [10751, 18],
@@ -784,12 +794,12 @@ export const videos = [
     vote_average: 8.7,
     vote_count: 227,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/loRmRzQXZeqG78TqZuyvSlEQfZb.jpg",
     genre_ids: [18, 36, 10752],
@@ -807,12 +817,12 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 12730,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/v5CEt88iDsuoMaW1Q5Msu9UZdEt.jpg",
     genre_ids: [10749, 18],
@@ -830,12 +840,12 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 303,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/poec6RqOKY9iSiIUmfyfPfiLtvB.jpg",
     genre_ids: [18, 80],
@@ -853,12 +863,12 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 9604,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/3RMLbSEXOn1CzLoNT7xFeLfdxhq.jpg",
     genre_ids: [10749, 16],
@@ -876,12 +886,12 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 224,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/jtAI6OJIWLWiRItNSZoWjrsUtmi.jpg",
     genre_ids: [10749],
@@ -899,12 +909,12 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 1404,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lp6SmwyNRspEYkkLXFEVuNlCw77.jpg",
     genre_ids: [16, 14, 10749, 18],
@@ -922,12 +932,12 @@ export const videos = [
     vote_average: 8.6,
     vote_count: 221,
     category: "Top Rated",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/i0zbSmiyyylh7H3Qb4jgscz46Pm.jpg",
     genre_ids: [27],
@@ -945,12 +955,12 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 36,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/An1nKjXahrChfEbZ3MAE8fsiut1.jpg",
     genre_ids: [27],
@@ -968,12 +978,12 @@ export const videos = [
     vote_average: 6,
     vote_count: 153,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/u5lEdCvKLkm1EhfQt3qe8Rr5DvR.jpg",
     genre_ids: [27],
@@ -991,12 +1001,12 @@ export const videos = [
     vote_average: 5.6,
     vote_count: 18,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/33wnBK5NxvuKQv0Cxo3wMv0eR7F.jpg",
     genre_ids: [27, 53],
@@ -1014,12 +1024,12 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 433,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/xHRabofjmMGoIV3mb6xgy4nwOcS.jpg",
     genre_ids: [27],
@@ -1037,12 +1047,12 @@ export const videos = [
     vote_average: 6.2,
     vote_count: 40,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/o76ZDm8PS9791XiuieNB93UZcRV.jpg",
     genre_ids: [27, 28, 878],
@@ -1060,12 +1070,12 @@ export const videos = [
     vote_average: 6.2,
     vote_count: 1525,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/ifUfE79O1raUwbaQRIB7XnFz5ZC.jpg",
     genre_ids: [27, 9648, 53],
@@ -1083,12 +1093,12 @@ export const videos = [
     vote_average: 6.8,
     vote_count: 1254,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/aTSA5zMWlVFTYBIZxTCMbLkfOtb.jpg",
     genre_ids: [27, 53],
@@ -1106,12 +1116,12 @@ export const videos = [
     vote_average: 5.1,
     vote_count: 735,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/hk4PwhKhT7q7jp1lvA8aiYqDluy.jpg",
     genre_ids: [16, 18, 35, 27],
@@ -1129,12 +1139,12 @@ export const videos = [
     vote_average: 7,
     vote_count: 579,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/5UANdP8xXHyVOGknfJlzQ7muLj3.jpg",
     genre_ids: [27],
@@ -1152,12 +1162,12 @@ export const videos = [
     vote_average: 6.3,
     vote_count: 51,
     category: "Horror",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
     genre_ids: [28, 878, 35, 10751, 12],
@@ -1175,12 +1185,12 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 1142,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/fEe5fe82qHzjO4yej0o79etqsWV.jpg",
     genre_ids: [16, 35, 28, 10751, 80],
@@ -1198,12 +1208,12 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 305,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/fOy2Jurz9k6RnJnMUMRDAgBwru2.jpg",
     genre_ids: [16, 10751, 35, 14],
@@ -1221,12 +1231,12 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 2058,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg",
     genre_ids: [16, 35, 10751, 14],
@@ -1244,12 +1254,12 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 6357,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/j8ve0iuDEnrcSpUxL62uvI4wnwB.jpg",
     genre_ids: [35, 10751, 10749],
@@ -1267,12 +1277,12 @@ export const videos = [
     vote_average: 8,
     vote_count: 26,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/tq3klWQevRK0Or0cGhsw0h3FDWQ.jpg",
     genre_ids: [12, 16, 35, 10751, 14],
@@ -1290,12 +1300,12 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 78,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/qBLEWvJNVsehJkEJqIigPsWyBse.jpg",
     genre_ids: [16, 10751, 14, 35, 12],
@@ -1313,12 +1323,12 @@ export const videos = [
     vote_average: 7.1,
     vote_count: 832,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/ewUqXnwiRLhgmGhuksOdLgh49Ch.jpg",
     genre_ids: [28, 12, 35, 878],
@@ -1336,12 +1346,12 @@ export const videos = [
     vote_average: 7,
     vote_count: 2119,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/eG0oOQVsniPAuecPzDD1B1gnYWy.jpg",
     genre_ids: [16, 35, 12, 10751],
@@ -1359,12 +1369,12 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 1099,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/stmYfCUGd8Iy6kAMBr6AmWqx8Bq.jpg",
     genre_ids: [28, 878, 35, 10751],
@@ -1382,12 +1392,12 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 7934,
     category: "Comedy",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/t9hNIUFcy0tYu55IPxjxRTTdZ6X.jpg",
     genre_ids: [10749, 18],
@@ -1405,12 +1415,12 @@ export const videos = [
     vote_average: 5.7,
     vote_count: 346,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/j8ve0iuDEnrcSpUxL62uvI4wnwB.jpg",
     genre_ids: [35, 10751, 10749],
@@ -1428,12 +1438,12 @@ export const videos = [
     vote_average: 8,
     vote_count: 26,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/vrNKZrPscucCO5SnHEpp5DZ7QWx.jpg",
     genre_ids: [35, 10749],
@@ -1451,12 +1461,12 @@ export const videos = [
     vote_average: 7.4,
     vote_count: 68,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/i9rEpTqC6aIQOWOc4PDEEAE3hFe.jpg",
     genre_ids: [10749, 878, 18],
@@ -1474,12 +1484,12 @@ export const videos = [
     vote_average: 7,
     vote_count: 255,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/A3bsT0m1um6tvcmlIGxBwx9eAxn.jpg",
     genre_ids: [12, 35, 10749],
@@ -1497,12 +1507,12 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 292,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/4rsomWxlqnHt3muGYK06auhOib6.jpg",
     genre_ids: [10749, 18],
@@ -1520,12 +1530,12 @@ export const videos = [
     vote_average: 7.6,
     vote_count: 1779,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/sqLNgWTMBhLBRY26SwwfWcSI5qq.jpg",
     genre_ids: [35, 10749],
@@ -1543,12 +1553,12 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 81,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lD8dFIk9wDEvOwZw0RB47e346io.jpg",
     genre_ids: [18, 36, 10749],
@@ -1566,12 +1576,12 @@ export const videos = [
     vote_average: 7.6,
     vote_count: 47,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/lV3UFPPxDIPelh46G9oySXN9Mcz.jpg",
     genre_ids: [10749, 18],
@@ -1589,12 +1599,12 @@ export const videos = [
     vote_average: 7.1,
     vote_count: 1686,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/o2OSpKzXuB1edCDyVC2MXAxXwyJ.jpg",
     genre_ids: [10749, 27, 53],
@@ -1612,12 +1622,12 @@ export const videos = [
     vote_average: 6.7,
     vote_count: 95,
     category: "Romance",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/6KgpxK3u4zOKLhTa16XNiYiDkJf.jpg",
     genre_ids: [99, 80],
@@ -1635,12 +1645,12 @@ export const videos = [
     vote_average: 7.7,
     vote_count: 6,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/f2J8DpT5bqV0AiI9VVcfiuqKo5l.jpg",
     genre_ids: [35, 28, 99],
@@ -1658,12 +1668,12 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 334,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/nXH3PbWtH7qpWlaAwFCvvh40pk8.jpg",
     genre_ids: [99],
@@ -1681,12 +1691,12 @@ export const videos = [
     vote_average: 6.3,
     vote_count: 41,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/8rft8A9nH43IReybFtYt21ezfMK.jpg",
     genre_ids: [99],
@@ -1704,12 +1714,12 @@ export const videos = [
     vote_average: 7.8,
     vote_count: 1358,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/l2Szl45c6YTszCqpNZVcU8b0M8P.jpg",
     genre_ids: [99],
@@ -1727,12 +1737,12 @@ export const videos = [
     vote_average: 6.9,
     vote_count: 11,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/kxj8WaxRzxUcJn7LathZBDyN7Ys.jpg",
     genre_ids: [99],
@@ -1750,12 +1760,12 @@ export const videos = [
     vote_average: 7.9,
     vote_count: 16,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/5dxftrwxnFHBkSKHJT3x1xwIydn.jpg",
     genre_ids: [99],
@@ -1773,12 +1783,12 @@ export const videos = [
     vote_average: 6.2,
     vote_count: 9,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/slh9qCbyDcMN2rC9FiueZ6pR2fj.jpg",
     genre_ids: [99],
@@ -1796,12 +1806,12 @@ export const videos = [
     vote_average: 5.5,
     vote_count: 67,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path: null,
     genre_ids: [99],
     id: 964943,
@@ -1817,12 +1827,12 @@ export const videos = [
     vote_average: 2,
     vote_count: 1,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
   {
     _id: uuid(),
-     adult: false,
+    adult: false,
     backdrop_path:
       "https://image.tmdb.org/t/p/original/uO6ZUez70Twan92pqoV60T9kiGH.jpg",
     genre_ids: [99],
@@ -1840,7 +1850,7 @@ export const videos = [
     vote_average: 5.4,
     vote_count: 195,
     category: "Documentaries",
-    liked:false,
-    addedToWatchLater:false
+    liked: false,
+    addedToWatchLater: false,
   },
 ];

@@ -1,14 +1,16 @@
 import React,{useEffect} from 'react'
-import { useLikedVideo } from '../context';
+import { useHistory, useLikedVideo } from '../context';
 import "../index.css";
 import "../components/Row/Row.css";
 import { Nav, VideoCard } from "../components";
 
 function LikedVideo() {
 const { likedVideo, getLikedVideoData } = useLikedVideo();
+const {getHistoryVideoData} = useHistory()
 
   useEffect(() => {
     getLikedVideoData()
+    getHistoryVideoData()
   }, [])
   
   return (

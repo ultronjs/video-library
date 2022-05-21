@@ -1,9 +1,15 @@
-import React from 'react'
-import { usePlayLists } from '../context';
+import React,{useEffect} from 'react'
+import { useHistory, usePlayLists } from '../context';
 import {Nav,PlayListCard} from "../components"
 
 function MyPlaylists() {
-  const {playlists} = usePlayLists()
+  const { playlists, getPlayListsData } = usePlayLists();
+  const {getHistoryVideoData} = useHistory()
+  useEffect(() => {
+    getPlayListsData()
+    getHistoryVideoData();
+  }, [])
+  
   return (
     <div className="main_container">
       <Nav />

@@ -6,9 +6,9 @@ import {
 } from "react-icons/md";
 import { AiOutlineLike, AiFillLike } from "react-icons/ai";
 import movieTrailer from "movie-trailer";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { useVideos } from "../context";
-import { useLikedVideo, usePlayLists, useWatchLater } from "../context";
+import { useLikedVideo, usePlayLists, useWatchLater,useAuth } from "../context";
 import PlayListModal from "./PlayListModal/PlayListModal";
 import { useHistory } from "../context/historyContext";
 
@@ -22,16 +22,16 @@ function VideoPlayerAndDetails() {
     const { likedVideo, postLikedVideoData, deleteLikedVideoData } = useLikedVideo();
     const { watchLater, postWatchLaterData, deleteWatchLaterData } = useWatchLater(); 
     const [showPlayListModal, setShowPlayListModal] = useState(false);
+    const { signInStatus } = useAuth();
+    const navigate = useNavigate()
     useEffect(() => {
+        
         getVideosData();
         if(videos.length){
+          console.log("i m here")
         const video = videos.filter((video) => video._id === videoId);
-        video.liked = likedVideo.some(
-          (element) => element._id === videoId
-        );
-        video.addedToWatchLater = watchLater.some(
-          (element) => element._id === videoId
-        );
+        console.log(video,"...",likedVideo,"...",watchLater)
+        console.log(video.liked,video.addedToWatchLater)
         setVideo(video[0]);
         movieTrailer(
           video[0]?.title ||
@@ -50,6 +50,11 @@ function VideoPlayerAndDetails() {
           })}
         },
       [videoId]);
+
+    video.liked = likedVideo.some((element) => element._id === videoId);
+    video.addedToWatchLater = watchLater.some(
+      (element) => element._id === videoId
+    );
   const opts = {
     height: "390",
     width: "100%",
@@ -74,50 +79,76 @@ function VideoPlayerAndDetails() {
           ></iframe>
           <h2 className="p-x-small">{video.title}</h2>
           <p className="px-x-small">{video.overview}</p>
-          <div className="flex flex-jc-flex-start gap-m p-x-small video_card_hover_actions">
-            {video.liked ? (
+          {signInStatus.status ? (
+            <div className="flex flex-jc-flex-start gap-m p-x-small video_card_hover_actions">
+              {video.liked ? (
+                <div
+                  className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
+                  onClick={() => deleteLikedVideoData(video._id)}
+                >
+                  <AiFillLike size={25} />
+                  <span>Liked</span>
+                </div>
+              ) : (
+                <div
+                  className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
+                  onClick={() => postLikedVideoData(video)}
+                >
+                  <AiOutlineLike size={25} />
+                  <span>Like</span>
+                </div>
+              )}
+
+              {video.addedToWatchLater ? (
+                <div
+                  className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
+                  onClick={() => deleteWatchLaterData(video._id)}
+                >
+                  <MdCheckCircleOutline size={25} />
+                  <span>Remove From Watch Later</span>
+                </div>
+              ) : (
+                <div
+                  className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
+                  onClick={() => postWatchLaterData(video)}
+                >
+                  <MdAddCircleOutline size={25} />
+                  <span>Add to Watch Later</span>
+                </div>
+              )}
               <div
                 className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
-                onClick={() => deleteLikedVideoData(video._id)}
+                onClick={() => setShowPlayListModal(true)}
               >
-                <AiFillLike size={25} />
-                <span>Liked</span>
+                <MdPlaylistAdd size={25} />
+                <span>Save to Playlists</span>
               </div>
-            ) : (
+            </div>
+          ) : (
+            <div className="flex flex-jc-flex-start gap-m p-x-small video_card_hover_actions">
               <div
                 className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
-                onClick={() => postLikedVideoData(video)}
+                onClick={() => navigate("/login")}
               >
                 <AiOutlineLike size={25} />
                 <span>Like</span>
               </div>
-            )}
-
-            {video.addedToWatchLater ? (
               <div
                 className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
-                onClick={() => deleteWatchLaterData(video._id)}
-              >
-                <MdCheckCircleOutline size={25} />
-                <span>Remove From Watch Later</span>
-              </div>
-            ) : (
-              <div
-                className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
-                onClick={() => postWatchLaterData(video)}
+                onClick={() => navigate("/login")}
               >
                 <MdAddCircleOutline size={25} />
                 <span>Add to Watch Later</span>
               </div>
-            )}
-            <div
-              className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
-              onClick={() => setShowPlayListModal(true)}
-            >
-              <MdPlaylistAdd size={25} />
-              <span>Save to Playlists</span>
+              <div
+                className="flex flex-ai-center gap-s video_card_hover_action mx-x-small"
+                onClick={() => navigate("/login")}
+              >
+                <MdPlaylistAdd size={25} />
+                <span>Save to Playlists</span>
+              </div>
             </div>
-          </div>
+          )}
           {showPlayListModal && (
             <PlayListModal
               setShowPlayListModal={setShowPlayListModal}

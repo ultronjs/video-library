@@ -34,49 +34,19 @@ function Nav() {
         </div>
         {signInStatus.status && (
           <div className="nav_links">
-            <NavLink
-              to="/"
-              activeStyle={{
-                fontWeight: "bold",
-              }}
-              className="nav_link"
-            >
+            <NavLink to="/" className="nav_link">
               Home
             </NavLink>
-            <NavLink
-              to="/watchlater"
-              activeStyle={{
-                fontWeight: "bold",
-              }}
-              className="nav_link"
-            >
+            <NavLink to="/watchlater" className="nav_link">
               My List
             </NavLink>
-            <NavLink
-              to="/history"
-              activeStyle={{
-                fontWeight: "bold",
-              }}
-              className="nav_link"
-            >
+            <NavLink to="/history" className="nav_link">
               History
             </NavLink>
-            <NavLink
-              to="/myplaylists"
-              activeStyle={{
-                fontWeight: "bold",
-              }}
-              className="nav_link"
-            >
+            <NavLink to="/myplaylists" className="nav_link">
               Playlists
             </NavLink>
-            <NavLink
-              to="/likedvideos"
-              activeStyle={{
-                fontWeight: "bold",
-              }}
-              className="nav_link"
-            >
+            <NavLink to="/likedvideos" className="nav_link">
               Liked Videos
             </NavLink>
           </div>
@@ -90,7 +60,7 @@ function Nav() {
           onClick={logOut}
         />
       ) : (
-        <Link to="login">
+        <Link to="/login">
           <button className="nav_login_btn btn btn_primary">Login</button>
         </Link>
       )}

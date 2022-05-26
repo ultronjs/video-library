@@ -121,7 +121,9 @@ code {
   left: 92%;
   top: 3%;
   color: var(--primary-grey);
+  background-color: var(--input-background);
   font-weight: bold;
+  border-radius: 50%;
 }
 .modal_dismiss:hover{
 background-color: var(--primary-white);

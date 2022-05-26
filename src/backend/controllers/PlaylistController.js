@@ -1,6 +1,5 @@
 import { Response } from "miragejs";
 import { requiresAuth } from "../utils/authUtils";
-import { v4 as uuid } from "uuid";
 
 /**
  * All the routes related to User Playlists are present here.
@@ -46,7 +45,7 @@ export const addNewPlaylistHandler = function (schema, request) {
   const user = requiresAuth.call(this, request);
   if (user) {
     const { playlist } = JSON.parse(request.requestBody);
-    user.playlists.push({ ...playlist, videos: [], _id: uuid() });
+    user.playlists.push({ ...playlist, videos: [] });
     return new Response(201, {}, { playlists: user.playlists });
   }
   return new Response(

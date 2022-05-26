@@ -53,6 +53,7 @@
     text-decoration: none;
     color: white;
 }
-.nav_selected{
+.active{
+    border-bottom: 3px solid var(--primary-color);
     font-weight: 700;
 }

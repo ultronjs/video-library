@@ -55,11 +55,11 @@ function PlayListModal(props) {
                   return (
                     <div className="flex flex-ai-center gap-s pb-x-small">
                       <input
-                        defaultChecked={
+                        checked={
                           playlist.videos.length > 0 &&
                           playlist.videos.filter(
                             (video) => video._id === props.video._id
-                          ).length>0
+                          ).length > 0
                             ? true
                             : false
                         }
@@ -110,11 +110,20 @@ function PlayListModal(props) {
               </div>
               <div className="modal_footer playlist_modal_footer">
                 <button
+                  disabled={
+                    createPlayList.title === "" || createPlayList.description === ""
+                  }
                   className="btn btn_primary"
                   onClick={() => {
-                    postPlayListsData(createPlayList)
+                    const playlistIdOfCurrentState = createPlayList._id;
+                    postPlayListsData(createPlayList).then((res) => {
+                      if(res.status ===201){
+                        postVideoInPlayList(playlistIdOfCurrentState, props.video);
+                      }
+                    }
+                    );
                     setShowCreateOption(false);
-                    setCreatePlayList(initialCreatePlayListObj)
+                    setCreatePlayList(initialCreatePlayListObj);
                   }}
                 >
                   Save

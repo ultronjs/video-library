@@ -8,7 +8,13 @@ import {
 } from "react-icons/md";
 import { AiOutlineLike, AiFillLike } from "react-icons/ai";
 import { BsFillPlayCircleFill } from "react-icons/bs";
-import { useLikedVideo, usePlayLists, useWatchLater,useHistory } from '../context';
+import {
+  useLikedVideo,
+  usePlayLists,
+  useWatchLater,
+  useHistory,
+  useAuth,
+} from "../context";
 import { useNavigate } from 'react-router';
 
 function VideoCard({ video, playListId }) {
@@ -20,6 +26,7 @@ function VideoCard({ video, playListId }) {
     useWatchLater();
   const { removeVideoInPlayList } = usePlayLists();
   const { history, postHistoryVideoData } = useHistory();
+  const { signInStatus } = useAuth();
   const playButtonHandler = (video) => {
     if (!history.some((element) => element._id === video._id)) {
       postHistoryVideoData(video);
@@ -56,47 +63,57 @@ function VideoCard({ video, playListId }) {
             src={video.backdrop_path}
             alt={video.name}
           />
-          <div className="flex flex-jc-space-evenly gap-m p-x-small video_card_hover_actions">
-            <BsFillPlayCircleFill
-              className="video_card_hover_action"
-              size={25}
-              onClick={() => playButtonHandler(video)}
-            />
-            {video.liked ? (
-              <AiFillLike
+          {signInStatus.status ? (
+            <div className="flex flex-jc-space-evenly gap-m p-x-small video_card_hover_actions">
+              <BsFillPlayCircleFill
                 className="video_card_hover_action"
                 size={25}
-                onClick={() => deleteLikedVideoData(video._id)}
+                onClick={() => playButtonHandler(video)}
               />
-            ) : (
-              <AiOutlineLike
-                className="video_card_hover_action"
-                size={25}
-                onClick={() => postLikedVideoData(video)}
-              />
-            )}
+              {video.liked ? (
+                <AiFillLike
+                  className="video_card_hover_action"
+                  size={25}
+                  onClick={() => deleteLikedVideoData(video._id)}
+                />
+              ) : (
+                <AiOutlineLike
+                  className="video_card_hover_action"
+                  size={25}
+                  onClick={() => postLikedVideoData(video)}
+                />
+              )}
 
-            {video.addedToWatchLater ? (
-              <MdCheckCircleOutline
-                onClick={() => deleteWatchLaterData(video._id)}
+              {video.addedToWatchLater ? (
+                <MdCheckCircleOutline
+                  onClick={() => deleteWatchLaterData(video._id)}
+                  className="video_card_hover_action"
+                  size={25}
+                />
+              ) : (
+                <MdAddCircleOutline
+                  onClick={() => postWatchLaterData(video)}
+                  className="video_card_hover_action"
+                  size={25}
+                />
+              )}
+              {playListId && (
+                <MdOutlineDeleteOutline
+                  className="icon"
+                  size={30}
+                  onClick={() => removeVideoInPlayList(playListId, video._id)}
+                />
+              )}
+            </div>
+          ) : (
+            <div className="flex flex-jc-space-evenly gap-m p-x-small video_card_hover_actions">
+              <BsFillPlayCircleFill
                 className="video_card_hover_action"
                 size={25}
+                onClick={() => playButtonHandler(video)}
               />
-            ) : (
-              <MdAddCircleOutline
-                onClick={() => postWatchLaterData(video)}
-                className="video_card_hover_action"
-                size={25}
-              />
-            )}
-            {playListId && (
-              <MdOutlineDeleteOutline
-                className="icon"
-                size={30}
-                onClick={() => removeVideoInPlayList(playListId, video._id)}
-              />
-            )}
-          </div>
+            </div>
+          )}
         </div>
       )}
     </>

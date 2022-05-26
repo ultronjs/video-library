@@ -42,7 +42,7 @@ const PlayListProvider = ({ children }) => {
             type: "ADD_PLAYLIST",
             payload: playlist,
           });
-          return data.playlists;
+          return {status:status ,data: data.playlists};
         }
       } catch (error) {
         addToast({
@@ -53,6 +53,7 @@ const PlayListProvider = ({ children }) => {
       }
     };
     const postVideoInPlayList = async (playlistId,video) => {
+      console.log(video,playlistId)
       try {
         const { status, data } = await instance({
           method: "post",
